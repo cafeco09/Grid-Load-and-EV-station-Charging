@@ -18,17 +18,6 @@ from prediction import predict
 import joblib
 import os
 
-# Define the new working directory path
-new_working_directory = '/Users/anshuldixit/Downloads'
-
-# Try to change the working directory
-try:
-    # Change the current working directory to the given path
-    os.chdir(new_working_directory)
-    st.write(f"Successfully changed working directory to {new_working_directory}")
-except Exception as e:
-    # If an error occurs, catch it and display the message
-    st.write(f"Error changing working directory: {e}")
 
 # Load the model without specifying compression
 import pickle
